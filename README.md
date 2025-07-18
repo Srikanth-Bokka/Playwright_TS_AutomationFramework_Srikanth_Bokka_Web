@@ -44,13 +44,13 @@ Click on the image above to watch the tutorials. -->
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Srikanth-Bokka/TestAutomationFramework_Srikanth_Bokka_Web_Playwright_TS.git
+   git clone https://github.com/Srikanth-Bokka/Playwright_TS_AutomationFramework_Srikanth_Bokka_Web.git
    ```
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd TestAutomationFramework_Srikatnth_Bokka_Web_Playwright_TS-main
+   cd Playwright_TS_AutomationFramework_Srikanth_Bokka_Web
    ```
 
 3. **Install dependencies:**
