@@ -1,4 +1,3 @@
-# Playwright_TS_AutomationFramework_Srikanth_Bokka_Web
 
 ---
 # 💻 Test Automation Framework | WEB 
