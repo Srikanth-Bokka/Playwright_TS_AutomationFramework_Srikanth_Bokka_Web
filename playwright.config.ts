@@ -31,7 +31,17 @@ export default defineConfig({
   workers:6,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  // reporter: 'html',
+  reporter: 
+  // 'html',
+  [
+    // ['list'],
+    ['allure-playwright', {
+      detail: true,
+      outputFolder: 'allure-results',
+      suiteTitle: false
+    }]
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -81,10 +91,10 @@ export default defineConfig({
     //   name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
+    {
+      name: 'Google Chrome',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    },
   ],
 
   /* Run your local dev server before starting the tests */
