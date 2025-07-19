@@ -122,6 +122,8 @@ The tests follow a modular and maintainable structure:
 |     |-- Components.ts
 |     |-- LoginPage.ts
 |     |-- ProductsPage.ts
+|-- allure-results/          # Allure test results (generated after test execution)
+|-- allure-report/           # Allure HTML report (generated after report generation)
 |-- test-data
 |     |-- login_credentials.json
 |-- tests-saucedemo
@@ -135,6 +137,8 @@ The tests follow a modular and maintainable structure:
 |-- playwright.config.ts
 ```
 
+- `allure-results`: Contains Allure test results generated after test execution.
+- `allure-report`: Contains the generated Allure HTML report with detailed test analytics and visualizations.
 - `pages`: Contains the Page Object Model (POM) classes representing web pages and their elements.
 - `playwright-report`: Contains the HTML report for tests (Logs, Screenshots, Traces and Videos are attached).
 - `test-data`: Contains external files (example: login credentials data) that can be used to mock data during tests.
@@ -169,4 +173,55 @@ This project is configured for CI using Github Actions. Check the configurations
 
 ## 📊 Reporting
 
-Playwright HTML report (Logs, Screenshots, Traces and Videos are attached) is stored in the `playwright-report` directory.
+This framework uses **Allure Report** for comprehensive test reporting. Allure provides detailed test execution reports with rich features like:
+
+- **Test Execution Timeline**: Visual representation of test execution flow
+- **Environment Information**: Detailed system and test environment details
+- **Test Categories**: Automatic categorization of tests (failed, broken, skipped, passed)
+- **Attachments**: Screenshots, logs, and other test artifacts
+- **Trends**: Historical test execution trends and statistics
+- **Custom Categories**: Ability to create custom test categories and filters
+
+### Running Tests and Generating Reports
+
+1. **Run tests:**
+   ```bash
+   npm run playwright:tests
+   ```
+
+2. **Generate and open Allure report:**
+   ```bash
+   npm run allure:report
+   ```
+
+3. **Generate report only (without opening):**
+   ```bash
+   npm run allure:generate
+   ```
+
+### Allure Report Structure
+
+- `allure-results/`: Contains raw test execution data
+- `allure-report/`: Contains the generated HTML report (created when you run the report command)
+
+### Prerequisites for Allure
+
+Make sure you have Allure command-line tool installed:
+
+**macOS (using Homebrew):**
+```bash
+brew install allure
+```
+
+**Windows (using Scoop):**
+```bash
+scoop install allure
+```
+
+**Linux:**
+```bash
+sudo apt-add-repository ppa:qameta/allure
+sudo apt-get update
+sudo apt-get install allure
+```
+
