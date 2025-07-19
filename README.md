@@ -20,19 +20,10 @@
 - [Configuration](#configuration)
 - [Continuous Integration](#continuous-integration)
 - [Reporting](#reporting)
-- [Other Projects](#other-projects)
 - [Technical Documents](#technical-documents)
-- [Contacts](#contacts)
 
 ## 📖 Introduction
 This repository contains a **Test Automation Framework** built with **Playwright** and **TypeScript** for testing **web applications**.
-
-
-<!-- ## 🎥 Video Tutorial
-
-<a href="https://www.youtube.com/watch?v=g0nG6aPbpl4&list=PLrBBHmoBFxBUu9G7haETpa0B03H9GnfKX"> <img src="https://img.youtube.com/vi/g0nG6aPbpl4/0.jpg" alt="Test Automation Framework | WEB | Cypress + JS" width="200"> </a>
-
-Click on the image above to watch the tutorials. -->
 
 ## 🛠️ Prerequisites
 
